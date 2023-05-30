@@ -9,13 +9,13 @@ async function main() {
     items = fetchedCartItems
 
     // Select the first sandwich on page load
-    selectSandwich(items[0])
+    cart.selectSandwich(items[0])
 
     // Display the ingredients we fetched
     ingredientList.render();
 
     // Display the sandwiches we fetched
-    renderCart();
+    cart.render();
 
     // Attach event listener to the 'Add Sandwich' button
     let addButton = document.querySelector('.add-button');
